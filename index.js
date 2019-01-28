@@ -1,6 +1,6 @@
 const express = require('express')
 var bodyParser = require("body-parser")
-
+const fs = require('fs')
 
 const app = express(); 
 app.set("views", "./views");
@@ -28,7 +28,10 @@ app.post('/generate',(req,res) => {
         .endPage()
         // end and save
         .endPDF();
-    res.send("PDF saved");
+    var data = fs.readFileSync('./output.pdf');
+    res.contentType("application/pdf");
+    res.send(data);
+    // res.send("PDF saved");
 
 })
 
