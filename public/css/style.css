@@ -1,0 +1,37 @@
+body {
+  background: url('../images/bg2.jpg') center center;
+  background-size: auto;
+
+}
+
+header {
+  background: rgb(68, 68, 255);
+  color: white;
+}
+
+#title,#tag-line{
+   text-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
+}
+
+.margin-text {
+  margin-top: 50px;
+}
+
+h5{
+ text-shadow: 2px 2px 8px rgb(219, 218, 218); 
+}
+
+.form-bor {
+  margin: 20px;
+  padding: 20px;
+  border-width: 3px;
+  border-color: black;
+}
+
+.text-details {
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-shadow: 2px 2px 8px rgba(44, 7, 255,0.5);
+  font-weight: bold;
+  text-align: center;
+}
