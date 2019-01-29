@@ -19,6 +19,22 @@ header {
 
 h5{
  text-shadow: 2px 2px 8px rgb(219, 218, 218); 
+  background: blue;
+  color: white;
+  font-family: 'Aleo', serif;
+
+}
+/* 
+#footer{
+    clear: both;
+    position: relative;
+    height: 40px;
+ 
+    bottom: 0;
+
+} */
+.margin-text {
+  margin-top: 20px;
 }
 
 .form-bor {
@@ -34,4 +50,24 @@ h5{
   text-shadow: 2px 2px 8px rgba(44, 7, 255,0.5);
   font-weight: bold;
   text-align: center;
+  border-width: 2px;
+  border-color: black;
+}
+
+
+.text-details {
+  font-size: 18px;
+  font-family: 'Work Sans',
+    sans-serif;
+}
+
+footer {
+  background: #3f3f3f;
+  color: #fff;
+  bottom: 0;
+  
+}
+
+.container {
+min-height: 100%;
 }
