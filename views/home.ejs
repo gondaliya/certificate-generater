@@ -23,8 +23,8 @@
   <header class="container-fluid">
     <div class="row ">
       <div class="col-md-12">
-        <h1 class="text-center padding">Surat marathon</h1>
-        <h4 class="text-center padding">Marathon that encourages peoples to clean India.</h4>
+        <h1 class="text-center padding" id="title">Surat Marathon</h1>
+        <h4 class="text-center padding" id="tag-line">Marathon that encourages peoples to clean India.</h4>
       </div>
     </div>
   </header>
@@ -41,11 +41,11 @@
     <div class="row justify-content-center">
       <div class="card bg-transparent form-bor">
         <div class="col-md-12">
-          <form action="/generate" method="post">
+          <form name="myform" action="/generate" method="post">
             <div class="form-group ">
               <h5 for="name">Enter Full Name</h5>
 
-              <input type="text" name="name" id="" /> <br />
+              <input type="text" name="name" id="" required minlength="1" /> <br />
             </div>
             <input class="btn btn-primary" type="submit" value="Generate certificate" />
           </form>
@@ -57,17 +57,16 @@
 
   <div class="container" id="text">
     <div class="row text-details">
-      <div class="col">
-        <p>Marathon was held in surat at nana varasa regarding clean India cempaing.total track was 7km and 3 winners
-          got medals. This website is for getting participant certificate for this marathon.</p>
+      <div class="col" id="desc">
+        <p>A National level Marathon was held in surat at nana varasa with initiative to clean India. Marathon was 7KM long and winners are honoured with medals. All paticipants can download certificate through this website.</p>
       </div>
     </div>
   </div>
 
-  <footer class="container-fluid bottom-fixed">
+  <footer class="container-fluid fixed-bottom">
     <div class="row text-center">
       <div class="col">
-        <h5>&copy: suratmarathoncertificate.tk</h5>
+        <h6>&copy suratmarathoncertificate</h6>
       </div>
     </div>
   </footer>
