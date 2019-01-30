@@ -36,7 +36,14 @@ app.post('/generate', (req, res) => {
   pdfDoc
     // edit 1st page
     .editPage(1)
-    .text(name123, 415, 380)
+    .text(name123, 1010, 1000, {
+      color: '#0F045C',
+      fontSize: 70,
+      bold: true,
+      font: 'Helvatica',
+   
+  
+    })
 
     .endPage()
     // end and save
