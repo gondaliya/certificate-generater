@@ -41,8 +41,8 @@ app.post('/generate', (req, res) => {
       fontSize: 70,
       bold: true,
       font: 'Helvatica',
-   
-  
+
+
     })
 
     .endPage()
@@ -54,6 +54,7 @@ app.post('/generate', (req, res) => {
   // res.send("PDF saved");
 })
 
-app.listen(5001, () => {
+let port = process.env.PORT || 3000;
+app.listen(port, () => {
   console.log('started')
 })

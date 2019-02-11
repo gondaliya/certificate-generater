@@ -15,5 +15,8 @@
     "fs": "0.0.1-security",
     "hummus-recipe": "^1.8.0",
     "simple-node-logger": "^18.12.21"
+  },
+  "engines": {
+    "node": "10.x"
   }
 }
